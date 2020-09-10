@@ -26,7 +26,7 @@ par(mfrow=c(2,2))
 
 #1
 plot(power$DateTime, power$Global_active_power, type = 'n',
-     xlab = '', ylab = 'Global Active Power (kilowatts)')
+     xlab = '', ylab = 'Global Active Power')
 lines(power$DateTime, power$Global_active_power, pch = '.', lty = 1)
 
 #2
