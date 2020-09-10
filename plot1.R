@@ -11,10 +11,6 @@ colnames(power) <- c('Date', 'Time', 'Global_active_power', 'Global_reactive_pow
                      'Voltage', 'Global_intensity', 'Sub_metering_1', 'Sub_metering_2', 
                      'Sub_metering_3')
 
-#convert dates and times
-power$Date <- as.Date(power$Date, format = '%d/%m/%Y')
-power$Time <- format(strptime(power$Time, '%T'), '%T')
-
 #plot
 hist(power$Global_active_power, col = 'red', 
      main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)')
